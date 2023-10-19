@@ -10,13 +10,13 @@
     }
 }
 
-@keyframes eye {
+@keyframes eyes {
     0% {
         margin-top: 10px;
     }
     100% {
         border-bottom-color: purple;
-        box-shadow: 0 10px 200px black;
+        box-shadow: 0 10px 200px white;
         margin-top: 0;
     }
 }
@@ -121,4 +121,52 @@ body {
     animation: face 1s infinite alternate;
     background-color: orangered;
     border-radius: 70px;
+}
+
+.face:before {
+    content: '';
+    width: 30px;
+    height: 60px;
+    background-color: forestgreen;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -70px auto 0;
+    top: 0; 
+    border-width: 0 10px 20px 10px;
+    border-style: solid;
+    border-color: darkgreen darkgreen #0a330a;
+    border-radius: 10px;
+}
+
+.eyes {
+    text-align: center;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-indent: -65px;
+    animation: eyes 1s infinite alternate;
+}
+
+.eyes:before,
+.eyes:after {
+    animation: eyes 1s infinite alternate;
+    content: '';
+    display: inline-block;
+    width: 0;
+    border-top-left-radius: 100%;
+    height: 0;
+    border-width: 60px;
+    border-style: solid;
+    margin: 20px;
+    border-color: transparent transparent yellow transparent;
+    border-radius: 100%;
+}
+
+.mouth {
+    background-color: yellow;
+    height: 40px;
+    border-top: 15px dashed orangered;
+    border-bottom: 10px dashed orangered;
+    border-radius: 0px;
+    animation: mouth 1s infinite alternate;
 }
