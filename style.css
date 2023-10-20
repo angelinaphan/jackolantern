@@ -58,6 +58,7 @@ body {
     margin: 0; 
     text-align: center;
     color: orangered;
+    text-shadow: 0 5px green;
     font-size: 80px;
     font-family: 'Bungee', cursive;
     animation: letter 1s infinite alternate;
@@ -70,15 +71,20 @@ body {
     text-shadow: 0 5px #964527;
 }
 
+.date {
+    color: purple;
+    text-shadow: 0 5px orangered;
+}
+
 .lantern {
     animation: zoom 1s infinite alternate;
     width: 330px;
     height: 280px;
-    background-color: orangered;
+    background-color:  #0a330a;
     margin: 140px auto 30px;
     border-width: 0 30px;
     border-style: solid;
-    border-color: #ff6830;
+    border-color:forestgreen;
     border-radius: 100px;
     position: relative;
 }
@@ -112,14 +118,14 @@ body {
     position: absolute;
     border-width: 0 30px 0; 
     border-style: solid;
-    border-color: #ff6830;
+    border-color: forestgreen;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0; 
     margin: -10px 40px;
     animation: face 1s infinite alternate;
-    background-color: orangered;
+    background-color: #0a330a;
     border-radius: 70px;
 }
 
@@ -127,7 +133,7 @@ body {
     content: '';
     width: 30px;
     height: 60px;
-    background-color: forestgreen;
+    background-color: lightorange;
     position: absolute;
     left: 0;
     right: 0;
@@ -135,7 +141,7 @@ body {
     top: 0; 
     border-width: 0 10px 20px 10px;
     border-style: solid;
-    border-color: darkgreen darkgreen #0a330a;
+    border-color: orange orange orangered;
     border-radius: 10px;
 }
 
